@@ -170,20 +170,7 @@
                     <p class="rsvp-text">Please let us know if you can celebrate with us!</p>
                     <p class="rsvp-deadline">Kindly respond by February 15th, 2025</p>
                     
-                    <form
-                      name="rsvp"
-                      id="rsvpForm"
-                      class="rsvp-form"
-                      method="POST"
-                      data-netlify="true"
-                      netlify-honeypot="bot-field"
-                      action="/success.html"
-                    >
-                        <input type="hidden" name="form-name" value="rsvp" />
-                        <p style="display:none">
-                          <label>Don’t fill this out: <input name="bot-field" /></label>
-                        </p>
-
+                    <form class="rsvp-form" id="rsvpForm" action="mailto:jose.kir.wedding@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">Full Name(s)</label>
                             <input type="text" id="name" name="name" required>
