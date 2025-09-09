@@ -170,11 +170,9 @@
                     <p class="rsvp-text">Please let us know if you can celebrate with us!</p>
                     <p class="rsvp-deadline">Kindly respond by February 15th, 2025</p>
                     
-                    <form class="rsvp-form" id="rsvpForm" data-netlify="true" name="rsvp" method="POST" action="success.html" netlify-honeypot="bot-field">
+                    <form name="rsvp" class="rsvp-form" id="rsvpForm" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="rsvp">
-                        <div style="display: none;">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </div>
+                        <input type="hidden" name="redirect" value="/success.html">
                         <div class="form-group">
                             <label for="name">Full Name(s)</label>
                             <input type="text" id="name" name="name" required>
