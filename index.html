@@ -72,7 +72,7 @@
                     <div class="detail-card">
                         <div class="detail-icon">🕐</div>
                         <h3>Time</h3>
-                        <p>Ceremony: 12:00 PM<br>Reception: 2:30 PM</p>
+                        <p>Ceremony: 12:00 PM<br>Reception: 14:30:00 PM</p>
                     </div>
                     <div class="detail-card">
                         <div class="detail-icon">📍</div>
@@ -93,35 +93,35 @@
                 <h2 class="section-title">Wedding Day Schedule</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-time">11:30 AM</div>
+                        <div class="timeline-time">4:30 PM</div>
                         <div class="timeline-content">
                             <h3>Guest Arrival</h3>
                             <p>Welcome drinks and mingling</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-time">12:00 PM</div>
+                        <div class="timeline-time">5:00 PM</div>
                         <div class="timeline-content">
                             <h3>Wedding Ceremony</h3>
                             <p>Join us as we say "I do"</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-time">1:00 PM</div>
+                        <div class="timeline-time">6:00 PM</div>
                         <div class="timeline-content">
                             <h3>Cocktail Hour</h3>
                             <p>Celebration drinks and photos</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-time">2:30 PM</div>
+                        <div class="timeline-time">7:00 PM</div>
                         <div class="timeline-content">
                             <h3>Reception Dinner</h3>
                             <p>Delicious Spanish cuisine</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-time">4:00 PM</div>
+                        <div class="timeline-time">9:00 PM</div>
                         <div class="timeline-content">
                             <h3>Dancing & Celebration</h3>
                             <p>Party the night away with us!</p>
@@ -175,48 +175,55 @@
                         <p style="margin: 0.5rem 0;"><strong>Phone:</strong> +34 123 456 789</p>
                     </div>
                     
-                    <form name="rsvp" class="rsvp-form" method="POST" data-netlify="true">
-                        <div class="form-group">
-                            <label for="name">Full Name(s)</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="attendance">Will you be attending?</label>
-                            <select id="attendance" name="attendance" required>
-                                <option value="">Please select</option>
-                                <option value="yes">Yes, I'll be there!</option>
-                                <option value="no">Sorry, can't make it</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group" id="guestsGroup" style="display: none;">
-                            <label for="guests">Number of guests (including yourself)</label>
-                            <select id="guests" name="guests">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="dietary">Dietary restrictions or special requests</label>
-                            <textarea id="dietary" name="dietary" rows="3" placeholder="Please let us know about any allergies or dietary needs"></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Special message for the couple</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Share your wishes or a favorite memory with us"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="rsvp-submit">Send RSVP</button>
-                    </form>
+                    <form name="rsvp" class="rsvp-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+    <!-- Required hidden input to identify the form to Netlify -->
+    <input type="hidden" name="form-name" value="rsvp">
+    <!-- Honeypot to reduce spam -->
+    <p style="display:none;">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <div class="form-group">
+        <label for="name">Full Name(s)</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="attendance">Will you be attending?</label>
+        <select id="attendance" name="attendance" required>
+            <option value="">Please select</option>
+            <option value="yes">Yes, I'll be there!</option>
+            <option value="no">Sorry, can't make it</option>
+        </select>
+    </div>
+    
+    <div class="form-group" id="guestsGroup" style="display: none;">
+        <label for="guests">Number of guests (including yourself)</label>
+        <select id="guests" name="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="dietary">Dietary restrictions or special requests</label>
+        <textarea id="dietary" name="dietary" rows="3" placeholder="Please let us know about any allergies or dietary needs"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Special message for the couple</label>
+        <textarea id="message" name="message" rows="4" placeholder="Share your wishes or a favorite memory with us"></textarea>
+    </div>
+    
+    <button type="submit" class="rsvp-submit">Send RSVP</button>
+</form>
                     
                     <div id="rsvpSuccess" class="success-message" style="display: none;">
                         <h3>Thank you!</h3>
