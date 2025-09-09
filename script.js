@@ -44,42 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // RSVP Form submission - let Netlify handle it naturally
-    rsvpForm.addEventListener('submit', function(e) {
-        // Don't prevent default - let Netlify process the form
-        
-        // Show loading state
-        const submitButton = document.querySelector('.rsvp-submit');
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-    });
+    // Let Netlify handle RSVP form submission naturally
+    // No JavaScript interference needed
 
-    function submitRSVP(data) {
-        // Show loading state
-        const submitButton = document.querySelector('.rsvp-submit');
-        const originalText = submitButton.textContent;
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-
-        // Simulate API call
-        setTimeout(() => {
-            // Hide form and show success message
-            rsvpForm.style.display = 'none';
-            successMessage.style.display = 'block';
-            
-            // You can replace this with actual form submission to your backend
-            console.log('RSVP Data:', data);
-            
-            // Optional: Send email or save to database
-            // Example with Netlify Forms:
-            // fetch('/', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            //     body: new URLSearchParams(data).toString()
-            // });
-            
-        }, 1500);
-    }
 
     // Add floating hearts animation
     function createFloatingHeart() {
