@@ -1,10 +1,8 @@
 // Smooth scrolling and navigation
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
-    const rsvpForm = document.getElementById('rsvpForm');
     const attendanceSelect = document.getElementById('attendance');
     const guestsGroup = document.getElementById('guestsGroup');
-    const successMessage = document.getElementById('rsvpSuccess');
 
     // Show/hide navigation bar on scroll
     let lastScrollTop = 0;
