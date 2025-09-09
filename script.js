@@ -44,19 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // RSVP Form submission
+    // RSVP Form submission - let Netlify handle it naturally
     rsvpForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+        // Don't prevent default - let Netlify process the form
         
-        // Get form data
-        const formData = new FormData(rsvpForm);
-        const data = {};
-        for (let [key, value] of formData.entries()) {
-            data[key] = value;
-        }
-
-        // Simulate form submission (replace with actual form handling)
-        submitRSVP(data);
+        // Show loading state
+        const submitButton = document.querySelector('.rsvp-submit');
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
     });
 
     function submitRSVP(data) {
