@@ -1,280 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose & Kir - Wedding February 28th</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Lara & Ignacio - Boda 18 de Octubre 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>💕</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="couple-names">Jose & Kir</h1>
-            <p class="wedding-date">February 28th, 2025</p>
-            <p class="wedding-location">Murcia, Spain</p>
-            <div class="hearts">💕</div>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+            <button id="accept-cookies" class="btn-accept">Aceptar</button>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow">↓</div>
-        </div>
-    </header>
+    </div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#our-story" class="nav-link">Our Story</a></li>
-                <li><a href="#details" class="nav-link">Details</a></li>
-                <li><a href="#schedule" class="nav-link">Schedule</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <div class="nav-logo">Lara & Ignacio</div>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#bienvenidos" class="nav-link">Bienvenidos</a></li>
+                <li><a href="#el-dia" class="nav-link">El Día</a></li>
                 <li><a href="#rsvp" class="nav-link">RSVP</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#recomendaciones" class="nav-link">Recomendaciones</a></li>
+                <li><a href="#internacional" class="nav-link">Invitados Internacionales</a></li>
+                <li><a href="#regalo" class="nav-link">Lista de Regalos</a></li>
+                <li class="language-switcher">
+                    <button id="lang-es" class="lang-btn active">ES</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section id="home" class="section">
-            <div class="container">
-                <div class="love-quote">
-                    <blockquote>
-                        "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."
-                    </blockquote>
-                    <cite>- Maya Angelou</cite>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Lara & Ignacio</h1>
+            <p class="hero-date">18 de Octubre de 2025</p>
+            <p class="hero-location">Córdoba, España</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Segundos</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section id="our-story" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title">Our Love Story</h2>
-                <div class="story-content">
-                    <div class="story-text">
-                        <p>Every great love story has a beginning, and ours started with a chance encounter that felt like destiny. From our first conversation, we knew there was something magical between us.</p>
-                        <p>Through laughter and tears, adventures and quiet moments, we've built a love that grows stronger every day. Now, we're ready to begin our greatest adventure yet - a lifetime together.</p>
-                        <p>We can't wait to celebrate this special day with all of you, surrounded by the beauty of Murcia and the warmth of our loved ones.</p>
+    <!-- Bienvenidos Section -->
+    <section id="bienvenidos" class="section section-welcome">
+        <div class="container">
+            <h2 class="section-title">¡Bienvenidos!</h2>
+            <div class="welcome-content">
+                <p class="lead-text">
+                    Queridos familiares y amigos,
+                </p>
+                <p>
+                    Es con gran alegría que les damos la bienvenida a nuestra página web de boda.
+                    Después de años compartiendo momentos inolvidables, hemos decidido dar el siguiente
+                    paso en nuestro viaje juntos.
+                </p>
+                <p>
+                    En este sitio encontrarán toda la información necesaria sobre nuestro gran día.
+                    Esperamos que puedan acompañarnos en esta celebración tan especial.
+                </p>
+                <p class="signature">
+                    Con cariño,<br>
+                    Lara & Ignacio
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Día Section -->
+    <section id="el-dia" class="section section-day">
+        <div class="container">
+            <h2 class="section-title">El Día</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Ceremonia</h3>
+                        <p class="timeline-time">17:00 h</p>
+                        <p class="timeline-location">Iglesia de San Francisco</p>
+                        <p class="timeline-address">Plaza de San Francisco, 14001 Córdoba</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">Ver en el mapa</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="details" class="section">
-            <div class="container">
-                <h2 class="section-title">Wedding Details</h2>
-                <div class="details-grid">
-                    <div class="detail-card">
-                        <div class="detail-icon">📅</div>
-                        <h3>Date</h3>
-                        <p>Friday, February 28th, 2025</p>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
                     </div>
-                    <div class="detail-card">
-                        <div class="detail-icon">🕐</div>
-                        <h3>Time</h3>
-                        <p>Ceremony: 12:00 PM<br>Reception: 14:30:00 PM</p>
-                    </div>
-                    <div class="detail-card">
-                        <div class="detail-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>Beautiful Venue<br>Murcia, Spain</p>
-                    </div>
-                    <div class="detail-card">
-                        <div class="detail-icon">👗</div>
-                        <h3>Dress Code</h3>
-                        <p>Cocktail Attire<br>Semi-formal</p>
+                    <div class="timeline-content">
+                        <h3>Cóctel</h3>
+                        <p class="timeline-time">18:30 h</p>
+                        <p class="timeline-location">Hacienda Los Jinetes</p>
+                        <p class="timeline-address">Carretera de Trassierra km 3, 14011 Córdoba</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">Ver en el mapa</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="schedule" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title">Wedding Day Schedule</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-time">4:30 PM</div>
-                        <div class="timeline-content">
-                            <h3>Guest Arrival</h3>
-                            <p>Welcome drinks and mingling</p>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">5:00 PM</div>
-                        <div class="timeline-content">
-                            <h3>Wedding Ceremony</h3>
-                            <p>Join us as we say "I do"</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">6:00 PM</div>
-                        <div class="timeline-content">
-                            <h3>Cocktail Hour</h3>
-                            <p>Celebration drinks and photos</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">7:00 PM</div>
-                        <div class="timeline-content">
-                            <h3>Reception Dinner</h3>
-                            <p>Delicious Spanish cuisine</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">9:00 PM</div>
-                        <div class="timeline-content">
-                            <h3>Dancing & Celebration</h3>
-                            <p>Party the night away with us!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="section">
-            <div class="container">
-                <h2 class="section-title">Our Memories</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <div class="placeholder-image">
-                            <span>💕</span>
-                            <p>Your beautiful memories here</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">
-                            <span>🌹</span>
-                            <p>Engagement photos</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">
-                            <span>❤️</span>
-                            <p>Special moments</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">
-                            <span>💐</span>
-                            <p>Together forever</p>
-                        </div>
+                    <div class="timeline-content">
+                        <h3>Banquete y Fiesta</h3>
+                        <p class="timeline-time">21:00 h</p>
+                        <p class="timeline-location">Hacienda Los Jinetes</p>
+                        <p class="timeline-description">Cena, baile y celebración hasta la madrugada</p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="rsvp" class="section alt-bg">
-            <div class="container">
-                <h2 class="section-title">RSVP</h2>
-                <div class="rsvp-content">
-                    <p class="rsvp-text">Please let us know if you can celebrate with us!</p>
-                    <p class="rsvp-deadline">Kindly respond by February 15th, 2025</p>
-                    <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; text-align: center;">
-                        <p style="color: #8B4B6B; font-weight: 600;">Alternative RSVP Methods:</p>
-                        <p style="margin: 0.5rem 0;"><strong>Email:</strong> jose.kir.wedding@gmail.com</p>
-                        <p style="margin: 0.5rem 0;"><strong>Phone:</strong> +34 123 456 789</p>
+            <div class="dress-code">
+                <h3>Código de Vestimenta</h3>
+                <p>Etiqueta - Se ruega no vestir de blanco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="section section-rsvp">
+        <div class="container">
+            <h2 class="section-title">RSVP</h2>
+            <div class="rsvp-content">
+                <p class="rsvp-intro">
+                    Por favor, confirma tu asistencia antes del 1 de septiembre de 2025
+                </p>
+                <form class="rsvp-form" id="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    
-                    <form name="rsvp" class="rsvp-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
-    <!-- Required hidden input to identify the form to Netlify -->
-    <input type="hidden" name="form-name" value="rsvp">
-    <!-- Honeypot to reduce spam -->
-    <p style="display:none;">
-        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-    </p>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Número de invitados *</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>¿Asistirás? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="yes" required>
+                                <span>Sí, asistiré</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="no">
+                                <span>No podré asistir</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dietary">Restricciones alimentarias o alergias</label>
+                        <textarea id="dietary" name="dietary" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje para los novios</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Confirmación</button>
+                </form>
+                <div class="contact-info">
+                    <h3>¿Preguntas?</h3>
+                    <p>Lara: <a href="mailto:lara@example.com">lara@example.com</a> | <a href="tel:+34600000000">+34 600 000 000</a></p>
+                    <p>Ignacio: <a href="mailto:ignacio@example.com">ignacio@example.com</a> | <a href="tel:+34600000001">+34 600 000 001</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="form-group">
-        <label for="name">Full Name(s)</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div class="form-group">
-        <label for="attendance">Will you be attending?</label>
-        <select id="attendance" name="attendance" required>
-            <option value="">Please select</option>
-            <option value="yes">Yes, I'll be there!</option>
-            <option value="no">Sorry, can't make it</option>
-        </select>
-    </div>
-    
-    <div class="form-group" id="guestsGroup" style="display: none;">
-        <label for="guests">Number of guests (including yourself)</label>
-        <select id="guests" name="guests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-    </div>
-    
-    <div class="form-group">
-        <label for="dietary">Dietary restrictions or special requests</label>
-        <textarea id="dietary" name="dietary" rows="3" placeholder="Please let us know about any allergies or dietary needs"></textarea>
-    </div>
-    
-    <div class="form-group">
-        <label for="message">Special message for the couple</label>
-        <textarea id="message" name="message" rows="4" placeholder="Share your wishes or a favorite memory with us"></textarea>
-    </div>
-    
-    <button type="submit" class="rsvp-submit">Send RSVP</button>
-</form>
-                    
-                    <div id="rsvpSuccess" class="success-message" style="display: none;">
-                        <h3>Thank you!</h3>
-                        <p>Your RSVP has been received. We can't wait to celebrate with you!</p>
+    <!-- Recomendaciones Section -->
+    <section id="recomendaciones" class="section section-recommendations">
+        <div class="container">
+            <h2 class="section-title">Recomendaciones</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <h3>Alojamiento</h3>
+                    <div class="rec-item">
+                        <h4>Hotel Córdoba Centro</h4>
+                        <p>Avenida de la Libertad, 14004 Córdoba</p>
+                        <p>Tel: +34 957 000 000</p>
+                        <a href="https://www.hotel-example.com" target="_blank">Ver hotel</a>
+                    </div>
+                    <div class="rec-item">
+                        <h4>NH Collection Amistad Córdoba</h4>
+                        <p>Plaza de Maimónides, 3, 14004 Córdoba</p>
+                        <p>Tel: +34 957 000 001</p>
+                        <a href="https://www.hotel-example2.com" target="_blank">Ver hotel</a>
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <h3>Qué Visitar</h3>
+                    <ul class="rec-list">
+                        <li>La Mezquita-Catedral de Córdoba</li>
+                        <li>Alcázar de los Reyes Cristianos</li>
+                        <li>Judería de Córdoba</li>
+                        <li>Medina Azahara</li>
+                        <li>Puente Romano</li>
+                        <li>Patios de Córdoba</li>
+                    </ul>
+                </div>
+
+                <div class="recommendation-card">
+                    <h3>Dónde Comer</h3>
+                    <div class="rec-item">
+                        <h4>Restaurante El Churrasco</h4>
+                        <p>Cocina tradicional cordobesa</p>
+                    </div>
+                    <div class="rec-item">
+                        <h4>Taberna Salinas</h4>
+                        <p>Tapas y platos típicos</p>
+                    </div>
+                    <div class="rec-item">
+                        <h4>Casa Pepe de la Judería</h4>
+                        <p>Gastronomía andaluza</p>
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <h3>Transporte</h3>
+                    <p><strong>Desde el aeropuerto:</strong> El Aeropuerto de Sevilla (SVQ) está a 1h 30min en coche.</p>
+                    <p><strong>Desde la estación:</strong> Estación de Córdoba Central a 15 minutos del centro.</p>
+                    <p><strong>Taxi/Uber:</strong> Disponibles en la ciudad.</p>
+                    <p><strong>Autobús:</strong> Líneas urbanas conectan toda la ciudad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internacional Section -->
+    <section id="internacional" class="section section-international">
+        <div class="container">
+            <h2 class="section-title">Invitados Internacionales</h2>
+            <div class="international-content">
+                <h3>Información para viajeros extranjeros</h3>
+
+                <div class="info-block">
+                    <h4>Documentación</h4>
+                    <p>Los ciudadanos de la UE solo necesitan DNI o pasaporte válido. Los ciudadanos de fuera de la UE deben verificar los requisitos de visado en la embajada española de su país.</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Moneda</h4>
+                    <p>La moneda oficial es el Euro (€). Se aceptan tarjetas de crédito en la mayoría de establecimientos. Hay cajeros automáticos disponibles en toda la ciudad.</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Idioma</h4>
+                    <p>El idioma oficial es el español. En zonas turísticas se habla inglés básicamente.</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Clima en Octubre</h4>
+                    <p>Temperaturas agradables entre 15-25°C. Se recomienda llevar ropa de entretiempo y algo de abrigo para la noche.</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Enchufes</h4>
+                    <p>España usa enchufes tipo C y F (220V). Los viajeros de otros países pueden necesitar un adaptador.</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Números de Emergencia</h4>
+                    <p>Emergencias: 112 (número único europeo)</p>
+                    <p>Policía: 091</p>
+                    <p>Ambulancia: 061</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regalo Section -->
+    <section id="regalo" class="section section-gift">
+        <div class="container">
+            <h2 class="section-title">Lista de Regalos</h2>
+            <div class="gift-content">
+                <p class="gift-intro">
+                    Vuestra presencia es el mejor regalo que podríamos recibir. Sin embargo,
+                    si deseáis tener un detalle con nosotros, hemos preparado algunas opciones:
+                </p>
+
+                <div class="gift-options">
+                    <div class="gift-option">
+                        <h3>Viaje de Luna de Miel</h3>
+                        <p>Estamos planeando un viaje inolvidable a Japón. Cualquier contribución será muy apreciada.</p>
+                        <div class="bank-info">
+                            <p><strong>Transferencia bancaria:</strong></p>
+                            <p>IBAN: ES00 0000 0000 0000 0000 0000</p>
+                            <p>Titular: Lara García & Ignacio Martínez</p>
+                        </div>
+                    </div>
+
+                    <div class="gift-option">
+                        <h3>Lista de Bodas</h3>
+                        <p>También tenemos listas de regalos en:</p>
+                        <div class="registry-links">
+                            <a href="https://www.elcorteingles.es" target="_blank" class="btn-registry">El Corte Inglés</a>
+                            <a href="https://www.amazon.es" target="_blank" class="btn-registry">Amazon</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Contact & Directions</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <h3>Questions?</h3>
-                        <p>If you have any questions about the wedding, please don't hesitate to reach out:</p>
-                        <p><strong>Email:</strong> jose.kir.wedding@gmail.com</p>
-                        <p><strong>Phone:</strong> +34 123 456 789</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Accommodation</h3>
-                        <p>We've reserved a block of rooms at nearby hotels for our out-of-town guests:</p>
-                        <p><strong>Hotel Recommendation:</strong><br>
-                        Beautiful Hotel Murcia<br>
-                        Special rate available</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Getting There</h3>
-                        <p><strong>Venue Address:</strong><br>
-                        Wedding Venue Name<br>
-                        Street Address<br>
-                        Murcia, Spain</p>
-                        <p>Parking is available on-site</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>Gift Registry</h3>
-                        <p>Your presence is the greatest gift of all! If you wish to honor us with a gift, we've registered at:</p>
-                        <p>• Gift Registry Link<br>
-                        • Honeymoon Fund</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Jose & Kir Wedding. Made with love 💕</p>
-                <p class="footer-date">February 28th, 2025 • Murcia, Spain</p>
-            </div>
+            <p class="footer-text">Lara & Ignacio | 18 de Octubre de 2025 | Córdoba, España</p>
+            <p class="footer-hashtag">#LaraEIgnacio2025</p>
         </div>
     </footer>
 
